@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariscos - Cafetero Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/pescados.css">
+  
+</head>
+
+<body>
+  <header class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+    <a href="index.html" class="flex items-center">
+      <img src="img/fresmarlogo.jpeg" alt="Fresmar" class="w-12 h-12 object-cover rounded-full" />
+    </a>
+    <h1 class="text-xl font-bold text-blue-700">Pescado</h1>
+  </header>
+  
+  <section id="categorias" class="py-20 bg-gray-100 px-4 max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Categorías</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+        <a href="mariscos.html" class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full hover:bg-blue-200 transition">Mariscos</a>
+        <a href="pescados.html" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Pescados</a>
+        <a href="pollo.html" class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full hover:bg-yellow-200 transition">Pollo</a>
+        <a href="cerdo.html" class="bg-pink-100 text-pink-700 px-4 py-2 rounded-full hover:bg-pink-200 transition">Cerdo</a>
+        <a href="verduras.html" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full hover:bg-purple-200 transition">Verduras y Otros</a>
+      </div>
+      
+  </section>
+
+  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Producto ejemplo -->
+    <div class="product-card cursor-pointer"
+    data-title="Camarones"
+    data-description="Camarones limpios, listos para cocinar. 500g por empaque."
+    data-image="img/mariscos/camarones.jpg">
+ <img src="img/mariscos/camarones.jpg" alt="Camarones">
+ <h2>Camarones</h2>
+</div>
+
+    <!-- Agrega más productos similares aquí -->
+  </main>
+
+ <!-- Modal -->
+<div id="product-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-xl shadow-lg p-6 max-w-md w-full relative">
+      <button id="modal-close" class="absolute top-2 right-2 text-gray-600 text-xl">&times;</button>
+      <img id="modal-image" src="" alt="Producto" class="w-full h-64 object-cover rounded-lg mb-4">
+      <h2 id="modal-title" class="text-xl font-semibold mb-2"></h2>
+      <p id="modal-description" class="text-gray-600 mb-4"></p>
+      <a id="whatsapp-button" href="#" target="_blank" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full block text-center">
+        Comprar por WhatsApp
+      </a>
+    </div>
+  </div>
+  <!-- Botón WhatsApp con imagen -->
+<a href="https://wa.me/573103008952"_blank"
+class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition duration-300 ease-in-out flex items-center justify-center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+</a>
+<script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/pescados.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .glass-nav {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero section */
+  #hero h1 {
+    line-height: 1.2;
+  }
+  
+  #hero p {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Card hover effect */
+  #productos-carousel .shadow-md:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Categorías */
+  #categorias span {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #categorias span:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2rem;
+    }
+  
+    #hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Map */
+  .aspect-w-16 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect-w-16 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  #scrollToTopBtn {
+    cursor: pointer;
+  }
+  
