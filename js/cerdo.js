@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modalTitle.textContent = title;
         modalDescription.textContent = description;
         modalImage.src = image;
-        whatsappButton.href = `https://wa.me/573103008952?text=Hola,%20quiero%20comprar%20${encodeURIComponent(title)}`;
+        whatsappButton.href = `https://wa.me/57103008952?text=Hola,%20quiero%20comprar%20${encodeURIComponent(title)}`;
   
         modal.classList.remove("hidden");
       });
